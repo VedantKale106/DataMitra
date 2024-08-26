@@ -121,6 +121,9 @@ def user_manual():
     return render_template('user_manual.html')
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 
 @app.route('/', methods=['GET', 'POST'])
