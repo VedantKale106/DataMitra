@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,198 +10,255 @@
     <!-- Custom CSS -->
     <style>
         body {
-            background: #f8f9fa; /* Light background for body */
+            background: #f8f9fa;
+            /* Light background for body */
             min-height: 100vh;
             font-family: Arial, sans-serif;
             padding: 2vh;
         }
-        
+
         .container {
             margin-top: 2px;
             border-radius: 20px;
             padding: 20px;
         }
-        h1, h2, h3 {
+
+        h1,
+        h2,
+        h3 {
             font-family: 'Times New Roman', Times, serif;
             color: #333;
             text-align: left;
             font-weight: bold;
         }
-        h2{
+
+        h2 {
             font-size: 200%;
             margin-bottom: 10px;
         }
-        h1{
+
+        h1 {
             text-decoration: underline;
             font-size: 300%;
         }
+
         p {
             font-size: 100%;
             /* margin-left: 15px; */
         }
+
         .btn {
             margin-bottom: 10px;
             font-weight: bold;
             font-family: 'Times New Roman', serif;
         }
-        .bold{
+
+        .bold {
             font-weight: bold;
             font-family: 'Times New Roman', Times, serif;
             font-size: 150%;
             text-align: center;
         }
-        .card{
+
+        .card {
             margin: 25px;
             padding: 30px;
             border: 0;
             border-radius: 20px;
         }
+
         .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-      .card:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 1px);
-  height: calc(100% + 1px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
 
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
+        .card:before {
+            content: "";
+            background: linear-gradient(45deg,
+                    #ff0000,
+                    #ff7300,
+                    #fffb00,
+                    #48ff00,
+                    #00ffd5,
+                    #002bff,
+                    #7a00ff,
+                    #ff00c8,
+                    #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            width: calc(100% + 1px);
+            height: calc(100% + 1px);
+            animation: glowing-button-85 20s linear infinite;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+        }
 
-.card:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #efeff3;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-.button-38 {
-  background-color: #FFFFFF;
-  size: 20px;
-  border: 0;
-  border-radius: .5rem;
-  box-sizing: border-box;
-  color: #111827;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.25rem;
-  padding: .75rem 1rem;
-  text-align: center;
-  text-decoration: none #D1D5DB solid;
-  font-weight: bold;
-  text-decoration-thickness: auto;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
+        @keyframes glowing-button-85 {
+            0% {
+                background-position: 0 0;
+            }
 
-.button-38:hover {
-  background-color: rgb(30, 41, 42);
-}
+            50% {
+                background-position: 400% 0;
+            }
 
-.button-38:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
+            100% {
+                background-position: 0 0;
+            }
+        }
 
-.button-38:focus-visible {
-  box-shadow: none;
-}
+        .card:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #efeff3;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+        }
 
+        .button-38 {
+            background-color: #FFFFFF;
+            size: 20px;
+            border: 0;
+            border-radius: .5rem;
+            box-sizing: border-box;
+            color: #111827;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.25rem;
+            padding: .75rem 1rem;
+            text-align: center;
+            text-decoration: none #D1D5DB solid;
+            font-weight: bold;
+            text-decoration-thickness: auto;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .button-38:hover {
+            background-color: rgb(30, 41, 42);
+        }
+
+        .button-38:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+        }
+
+        .button-38:focus-visible {
+            box-shadow: none;
+        }
     </style>
 </head>
+
 <body>
     <h1 class="mb-4 text-center">User Manual</h1>
-    <p class="bold">Welcome to the Dataset Preprocessing Tool. This manual will guide you through the various features and functionalities of the website.</p>
+    <p class="bold">Welcome to the Dataset Preprocessing Tool. This manual will guide you through the various features
+        and functionalities of the website.</p>
     <div class="container">
-        
+
         <div class="row">
             <div class="col-sm-12 col-md-3 d-flex flex-column card shadow-lg">
                 <h2> Uploading a Dataset</h2>
-                <p>To begin using the tool, upload a CSV file containing your dataset. Click the "Upload CSV File" button, select your file, and click "Upload".</p>
+                <p>To begin using the tool, upload a CSV file containing your dataset. Click the "Upload CSV File"
+                    button, select your file, and click "Upload".</p>
             </div>
             <div class="col-sm-12 col-md-3 d-flex flex-column card  shadow-lg">
                 <h2> Handling Missing Values</h2>
-                <p>If your dataset contains missing values, you can handle them by selecting the column and clicking the "Handle Missing Values" button. The tool will fill missing values with the mean for numerical columns and the mode for categorical columns.</p>
+                <p>If your dataset contains missing values, you can handle them by selecting the column and clicking the
+                    "Handle Missing Values" button. The tool will fill missing values with the mean for numerical
+                    columns and the mode for categorical columns.</p>
 
             </div>
             <div class="col-sm-12 col-md-3 d-flex flex-column card  shadow-lg">
                 <h2> Encoding Categorical Columns</h2>
-                <p>To encode categorical columns, select the column you want to encode and click the "Encode Categorical Columns" button. The tool will convert categorical values into numerical values.</p>
-        
+                <p>To encode categorical columns, select the column you want to encode and click the "Encode Categorical
+                    Columns" button. The tool will convert categorical values into numerical values.</p>
+
             </div>
             <div class="col-sm-12 col-md-3 d-flex flex-column card  shadow-lg">
                 <h2> Dropping Duplicates</h2>
-                <p>To remove duplicate rows from your dataset, click the "Drop Duplicates" button. This will ensure that your dataset only contains unique records.</p>
+                <p>To remove duplicate rows from your dataset, click the "Drop Duplicates" button. This will ensure that
+                    your dataset only contains unique records.</p>
             </div>
             <div class="col-sm-12 col-md-3 d-flex flex-column card  shadow-lg">
                 <h2> Scaling Numeric Columns</h2>
-                <p>If you want to standardize the scale of numeric columns, select the column and click the "Scale Numeric Column" button. The tool will apply standard scaling to the selected column.</p>
+                <p>If you want to standardize the scale of numeric columns, select the column and click the "Scale
+                    Numeric Column" button. The tool will apply standard scaling to the selected column.</p>
             </div>
             <div class="col-sm-12 col-md-3  d-flex flex-column card  shadow-lg">
                 <h2> Deleting Columns</h2>
-        <p>To remove an entire column from your dataset, select the column and click the "Delete Column" button. This will permanently remove the selected column from your dataset.</p>
+                <p>To remove an entire column from your dataset, select the column and click the "Delete Column" button.
+                    This will permanently remove the selected column from your dataset.</p>
 
             </div>
             <div class="col-sm-12 col-md-3  d-flex flex-column card  shadow-lg">
                 <h2> Undoing Operations</h2>
-                <p>If you wish to revert the last operation performed, click the "Undo Last Operation" button. This will undo the most recent change made to the dataset.</p>
+                <p>If you wish to revert the last operation performed, click the "Undo Last Operation" button. This will
+                    undo the most recent change made to the dataset.</p>
             </div>
             <div class="col-sm-12 col-md-3  d-flex flex-column card  shadow-lg">
                 <h2> Viewing Column Statistics</h2>
-                <p>To view statistics of a specific column, select the column and click the "Show Column Statistics" button. The statistics include maximum, minimum, mean, standard deviation, variance, median, and mode.</p>
+                <p>To view statistics of a specific column, select the column and click the "Show Column Statistics"
+                    button. The statistics include maximum, minimum, mean, standard deviation, variance, median, and
+                    mode.</p>
             </div>
-            
+            <div class="col-sm-12 col-md-3 d-flex flex-column card shadow-lg">
+                <h2> Validate DataFrame</h2>
+                <p>To ensure that your dataset meets certain quality criteria, click the "Validate DataFrame" button.
+                    This will check for issues such as missing values, data types inconsistencies, and other potential
+                    data quality problems.</p>
+            </div>
+
+            <div class="col-sm-12 col-md-3 d-flex flex-column card shadow-lg">
+                <h2> Remove Outliers</h2>
+                <p>To remove outliers from your dataset, select the column you wish to clean and click the "Remove
+                    Outliers" button. The tool will identify and remove values that fall outside a specified range or
+                    distribution.</p>
+            </div>
+
+            <div class="col-sm-12 col-md-3 d-flex flex-column card shadow-lg">
+                <h2> Replace Values</h2>
+                <p>If you need to replace specific values in your dataset, use the "Replace Values" feature. Select the
+                    column and specify the value to be replaced and its replacement. Click the "Replace Values" button
+                    to make the changes.</p>
+            </div>
+
+            <div class="col-sm-12 col-md-3 d-flex flex-column card shadow-lg">
+                <h2> Delete Selected Values</h2>
+                <p>To remove specific values from a column, use the "Delete Selected Values" button. Choose the column
+                    and specify the values to be deleted. This will remove only the selected values, leaving other data
+                    intact.</p>
+            </div>
+
+
             <div class="col-sm-12 col-md-3  d-flex flex-column card  shadow-lg">
                 <h2> Viewing Dataset Details</h2>
-                <p>Click the "Show Dataset Details" button to see an overview of your dataset, including the number of rows, columns, and the count of numerical and categorical columns.</p>
+                <p>Click the "Show Dataset Details" button to see an overview of your dataset, including the number of
+                    rows, columns, and the count of numerical and categorical columns.</p>
             </div>
             <div class="col-sm-12 col-md-3  d-flex flex-column card shadow-lg">
                 <h2> Generating Plots</h2>
-        <p>You can visualize your data by generating plots. Select the type of plot (Histogram, Scatter Plot, or Box Plot) and choose the relevant columns for the X and Y axes. Click "Generate Plot" to view the plot.</p>
+                <p>You can visualize your data by generating plots. Select the type of plot (Histogram, Scatter Plot, or
+                    Box Plot) and choose the relevant columns for the X and Y axes. Click "Generate Plot" to view the
+                    plot.</p>
             </div>
             <div class="col-sm-12 col-md-3  d-flex flex-column card shadow-lg">
                 <h2> Exporting Data</h2>
-        <p>To save the processed dataset as a CSV file, click the "Export CSV" button. You can also download the label encoders and scalers used in the preprocessing by clicking the "Export Encoders & Scalers" button.</p>
+                <p>To save the processed dataset as a CSV file, click the "Export CSV" button. You can also download the
+                    label encoders and scalers used in the preprocessing by clicking the "Export Encoders & Scalers"
+                    button.</p>
             </div>
             <div class="col-sm-12 col-md-3  d-flex flex-column card shadow-lg">
                 <h2> Contact</h2>
@@ -210,4 +268,5 @@
         <center><a href="/" class="button-38 btn btn-primary mt-3">Back to Main Page</a></center>
     </div>
 </body>
+
 </html>
