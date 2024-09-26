@@ -52,4 +52,4 @@ This app is developed by Vedant Kale and Niraj Suryavanshi
 
 ### Contact
 
-For any questions or feedback, please reach out to vedant.kale22@pccoepune.org to(mailto:vedant.kale22@pccoepune.org).
+For any questions or feedback, please reach out to vedant.kale22@pccoepune.org
